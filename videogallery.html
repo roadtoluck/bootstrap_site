@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,24 +19,39 @@
       crossorigin="anonymous"></script>
 
     <title>Gallery</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+
+        }
+
+        #well-no-music{
+            text-align: center;
+        }
+
+        .embed-responsive-item{
+            margin: auto;    
+            display: block;
+            margin-bottom: 50px;
+        }
+
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-light">
-        <span href="#" class="navbar-brand h1">WELCOME</span>
-
+    <nav class="navbar navbar-light navbar-expand-lg bd-navbar">
+        <span href="#" class="navbar-brand h1"><img src="src/photo/logo.png" height="50px" width="50px" alt="deep-purple-logo"></span>
             <ul class="navbar-nav"></ul>
-
                 <li class="nav-item nav-link">
                     <a href="index.html">Home</a>
                 </li>
-
                 <li class="nav-item nav-link">
-                    <a href="about.html">About</a>
+                    <a href="albums.html">Albums</a>
                 </li>
-
-                <li class="nav-item dropdown active">
-                    <a class="nav-link dropdown-toggle" href="#"data-toggle="dropdown">
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#"data-toggle="dropdown">
                         Gallery
                     </a>
                     <div class="dropdown-menu">
@@ -45,14 +60,30 @@
                         <a class="dropdown-item" href="videogallery.html">Videos</a>
                     </div>
                 </li>
-
                 <li class="nav-item nav-link">
                     <a href="contact.html">Contact</a>
                 </li>
-                
             </ul>
-
-    </nav>
+    </nav>  
     
+    <div class="container">
+        <h1>Videos</h1>
+
+        <p id="well-no-music">Due to deep purple music videos containing their music, 
+            there's no point posting any of this here, you stil can find all albums with links to 
+            youtube if you look up albums page
+        </p>
+        <div class="row">
+            <div class="col-md">
+                <iframe width="800px" height="500px" class="embed-responsive-item" src="https://www.youtube.com/embed/P3e24Of44ac" 
+                frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+                    <iframe width="800px" height="500px" class="embed-responsive-item" src="https://www.youtube.com/embed/FMFm9GxB_Eo" 
+                    frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>

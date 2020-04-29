@@ -1,4 +1,4 @@
 # bootstrap_site
-Repository for website made with bootstrap
+Repository for website made using bootstrap
 
 https://roadtoluck.github.io/bootstrap_site/

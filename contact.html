@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
@@ -19,22 +19,30 @@
     crossorigin="anonymous"></script>
 
     <title>Contacts</title>
+
+    <style>
+
+        h1{
+            text-align: center;
+        }
+
+        div .col-sm{
+            text-align: center;
+        }
+
+    </style>
 </head>
 <body>
 
-    <nav class="navbar navbar-light navbar-expand-lg bg-light">
-        <span href="#" class="navbar-brand h1">WELCOME</span>
-
+    <nav class="navbar navbar-light navbar-expand-lg bd-navbar">
+        <span href="#" class="navbar-brand h1"><img src="src/photo/logo.png" height="50px" width="50px" alt="deep-purple-logo"></span>
             <ul class="navbar-nav"></ul>
-
                 <li class="nav-item nav-link">
                     <a href="index.html">Home</a>
                 </li>
-
                 <li class="nav-item nav-link">
-                    <a href="about.html">About</a>
+                    <a href="albums.html">Albums</a>
                 </li>
-
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#"data-toggle="dropdown">
                         Gallery
@@ -45,15 +53,23 @@
                         <a class="dropdown-item" href="videogallery.html">Videos</a>
                     </div>
                 </li>
-
                 <li class="nav-item nav-link active">
                     <a href="contact.html">Contact</a>
                 </li>
-                
             </ul>
-
     </nav>
 
+    <div class="container">
+        <h1>Contact Me</h1>
+        <div class="row">
+            <div class="col-sm">
+                <p>My E-mail: flatroncanyon222@gmail.com</p>
+                <p>My Location:</p>
+                <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2175.7558766801753!2d24.101726015541775!3d56.95298370625612!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eecf7bac058ce9%3A0x96a8a0e931b27448!2sR%C4%ABgas%20Valsts%20Tehnikums!5e0!3m2!1slv!2slv!4v1588172197993!5m2!1slv!2slv"
+                 width="400" height="350" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+            </div>
+        </div>        
+    </div>
     
 </body>
 </html>

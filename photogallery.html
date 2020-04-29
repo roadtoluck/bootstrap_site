@@ -2,8 +2,9 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 shrink-to-fit=no">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="libs/lightbox/css/lightbox.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" 
@@ -18,41 +19,86 @@
       integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" 
       crossorigin="anonymous"></script>
 
+      <script src="libs/lightbox/js/lightbox.js"></script>
+
     <title>Gallery</title>
+
+    <style>
+        .gallery-photo{
+            width: 300px;
+            height: 300px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+    </style>
 </head>
 <body>
 
-  <nav class="navbar navbar-light navbar-expand-lg bg-light">
-    <span href="#" class="navbar-brand h1">WELCOME</span>
-
-        <ul class="navbar-nav"></ul>
-
-            <li class="nav-item nav-link">
-                <a href="index.html">Home</a>
-            </li>
-
-            <li class="nav-item nav-link">
-                <a href="about.html">About</a>
-            </li>
-
-            <li class="nav-item dropdown active">
-                <a class="nav-link dropdown-toggle" href="#"data-toggle="dropdown">
-                    Gallery
-                </a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="photogallery.html">Photos</a>
-                    <div class="dropdown-divider"></div>
-                    <a class="dropdown-item" href="videogallery.html">Videos</a>
-                </div>
-            </li>
-
-            <li class="nav-item nav-link">
-                <a href="contact.html">Contact</a>
-            </li>
-            
-        </ul>
-
-</nav>
+    <nav class="navbar navbar-light navbar-expand-lg bd-navbar">
+        <span href="#" class="navbar-brand h1"><img src="src/photo/logo.png" height="50px" width="50px" alt="deep-purple-logo"></span>
+            <ul class="navbar-nav"></ul>
+                <li class="nav-item nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-item nav-link">
+                    <a href="albums.html">Albums</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active dropdown-toggle" href="#"data-toggle="dropdown">
+                        Gallery
+                    </a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="photogallery.html">Photos</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="videogallery.html">Videos</a>
+                    </div>
+                </li>
+                <li class="nav-item nav-link">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+    </nav>
     
+    <div class="container">
+        <h1>Photos</h1>
+        <div class="row">
+            <div class="col-lg">
+                <a href="src/photo/deep_purple_band.jpg" data-lightbox="deeppurple" data-title="Band photo"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/deep_purple_band.jpg"> 
+                </a> 
+                <a href="src/photo/deep_puple_band2.jpg" data-lightbox="deeppurple" data-title="Second Band photo"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/deep_puple_band2.jpg"> 
+                </a>
+                <a href="src/photo/logo.png" data-lightbox="deeppurple" data-title="Perfect Stranger album cover with band logo in it"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/logo.png"> 
+                </a>
+            </div>
+            <div class="col-lg">
+                <a href="src/photo/house-of-blue-light.jpg" data-lightbox="deeppurple" data-title="House of blue light album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/house-of-blue-light.jpg"> 
+                </a>
+                <a href="src/photo/machine-head.jpg" data-lightbox="deeppurple" data-title="Machine head album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/machine-head.jpg"> 
+                </a>
+                <a href="src/photo/abandon.jpg" data-lightbox="deeppurple" data-title="Abandon album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/abandon.jpg"> 
+                </a>
+            </div>
+            <div class="col-lg">
+                <a href="src/photo/deep-purple.jpg" data-lightbox="deeppurple" data-title="Deep Purple's self titled album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/deep-purple.jpg"> 
+                </a>
+                <a href="src/photo/deep-purple-in-rock.jpg" data-lightbox="deeppurple" data-title="Deep Purple in Rock album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/deep-purple-in-rock.jpg"> 
+                </a>
+                <a href="src/photo/shades-of-deep-purple.jpg" data-lightbox="deeppurple" data-title="Shades of deep purple album cover"> 
+                    <img class="img-fluid gallery-photo" src="src/photo/shades-of-deep-purple.jpg"> 
+                </a>
+            </div>
+        </div>
+    </div>
+
 </body>
 </html>
